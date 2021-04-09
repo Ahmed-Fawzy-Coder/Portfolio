@@ -1,0 +1,28 @@
+
+#counters {
+    p {
+        color: #777777;
+    }
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(to right, $gradientColor1, $gradientColor2);
+    .row {
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    div{
+        text-align: center;
+        color: white !important;
+        p{
+            text-align: center;
+            color: white !important;
+        }
+    }
+    h3 {
+        font-size: 40px;
+    }
+    &>div{
+        width: 70%
+    }
+}

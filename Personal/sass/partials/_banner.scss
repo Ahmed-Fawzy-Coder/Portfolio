@@ -1,0 +1,30 @@
+#banner {
+    p {
+        color: #777777;
+    }
+    background: {
+        color:#F9F9FF;
+        repeat:no-repeat
+    };
+    height: 710px;
+    padding-top: 100px;
+    .content-left {
+        width: 50%;
+        height: auto;
+        padding-right: 80px;
+    }
+}
+#aboutme {
+    p {
+        color: #777777;
+    }
+    padding: 80px 20px 0px;
+    .content-right {
+        width: 45%;
+        padding-top: 25px;
+    }
+    .content-left {
+    width: 55%;
+    margin-right: 73px;
+}
+}

@@ -1,0 +1,48 @@
+#feedback {
+    p {
+       color: #777777;
+   }
+   background-color: #F9F9FF;
+   padding: 100px 0;
+   .content {
+       padding: 0px 20px
+   }
+   .controllers {
+       margin-top: 41px;
+       margin-left: -11px;
+       box-shadow: -14.142px 14.142px 20px 0px rgb(234,234, 234);
+       height: fit-content;
+   }
+   .test {
+       background-color: white;
+       display: flex;
+       padding: 30px;
+       img {
+           height: 40px;
+       }
+   }
+   .test-container {
+       display: grid;
+       grid-template-columns: auto auto 50px;
+       grid-gap: 24px;
+       margin-top: 100px;
+   }
+}
+.test-controller {
+   cursor: pointer;
+   height: 44px;
+   width: 44px;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #8a8787;
+   border: 1px solid #f5f5f5;
+   &:hover{
+       color: white;
+       background-color: $main-color;
+   }
+   i {
+       margin: 0
+   }
+}

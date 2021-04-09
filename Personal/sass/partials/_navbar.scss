@@ -1,0 +1,30 @@
+
+/* navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    background-color: white;
+    /* border-bottom: 1px solid #EFEFF0; */
+    z-index: 10;
+    p {
+        color: #777777;
+    }
+}
+.navLinks {
+    list-style: none;
+    display: flex;
+    font-size: pixelsToRem(12);
+    a {
+        text-decoration: none;
+        @include weightNcolor(500);
+        &:hover{
+            color: #8491FF;
+        }
+    };
+}
+.active {
+    color: $main-color
+}

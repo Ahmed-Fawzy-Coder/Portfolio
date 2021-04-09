@@ -1,0 +1,556 @@
+/* global */
+:root {
+  --main-color: #1f1534;
+  --primary-btn-color: #458ff6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", system-ui, sans-serif;
+}
+#test i {
+  color: var(--primary-btn-color);
+}
+/* my framework */
+.navbar-shadow {
+  transition: all 0.5s;
+  box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+}
+.container {
+  width: 76%;
+  margin: 0 auto;
+  display: flex;
+}
+.row {
+  display: flex;
+}
+.secondary-text,
+.main-text {
+  color: #222222;
+}
+.secondary-text {
+  color: #222222;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.main-text {
+  color: #222222;
+}
+.btn {
+  height: 56px;
+  width: 200px;
+  border-radius: 55px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 56px;
+  border: none;
+  outline: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1.4px solid #458ff6;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary {
+  color: white;
+  background-color: var(--primary-btn-color);
+}
+.btn-primary:hover {
+  background-color: white;
+  color: var(--primary-btn-color);
+}
+.btn-secondary {
+  background-color: white;
+  color: var(--primary-btn-color);
+}
+.btn-secondary:hover {
+  color: white;
+  background-color: var(--primary-btn-color);
+}
+.xlarge {
+  font-size: 60px;
+}
+.large {
+  font-size: 50px;
+}
+.medium {
+  font-size: 40px;
+}
+.upper {
+  text-transform: uppercase;
+}
+.capital {
+  text-transform: capitalize;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.d-column {
+  flex-direction: column;
+}
+.w-50 {
+  width: 50%;
+}
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.align-center {
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 38px;
+}
+.large-margin {
+  margin: 80px auto;
+}
+.med-margin {
+  margin: 40px auto;
+}
+.gray {
+  color: #a7a7a7;
+}
+.white {
+  color: #ffffff;
+}
+/* navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 84px;
+  background-color: white;
+  z-index: 5;
+  /* border-bottom: 1px solid #EFEFF0; */
+}
+.navLinks {
+  list-style: none;
+  display: flex;
+  font-size: 18px;
+  width: 44.8%;
+}
+.navLinks a {
+  text-decoration: none;
+  color: #222222;
+  font-weight: 600;
+}
+.navLinks a:hover {
+  color: var(--primary-btn-color);
+}
+.active {
+  color: var(--primary-btn-color);
+}
+/* banner  */
+#banner {
+  height: 719px;
+  padding-top: 84px;
+  margin-bottom: 190px;
+}
+#banner .container {
+  background-image: url("/img/trafalgar-header illustration 1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#banner .content-left {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 80px;
+}
+#banner .content {
+  width: 36%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#banner .content h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  margin: 45px 0px;
+}
+#banner .content p {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  color: #7d7987;
+}
+/* servcies  */
+#services {
+  background: url("/img/bg-services.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  flex-direction: column;
+  align-items: center;
+}
+.header h2 {
+  font-size: 36px;
+  line-height: 56px;
+  position: relative;
+  margin-bottom: 84px;
+}
+.header h2:after {
+  content: "";
+  background-color: black;
+  width: 56px;
+  height: 2px;
+  position: absolute;
+  bottom: -20px;
+}
+#services .header h2:after {
+  left: 37%;
+}
+.header p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  width: 78%;
+  text-align: center;
+  color: #7d7987;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 73px;
+  background: url("/img/element.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.card {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  height: 354px;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+  margin: 17px;
+  padding: 54px 37px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  /* color:white !important;
+    background-color:#5fa2ff */
+  box-shadow: 10px 40px 55px #cecece;
+}
+.card span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7d7987;
+}
+.card h2 {
+  font-size: 24px;
+  line-height: 56px;
+}
+.card p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7d7987;
+}
+.card div {
+  height: 140px;
+}
+/* banner  */
+#banner2 {
+  height: 719px;
+  padding-top: 84px;
+  background-image: url("/img/element.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+#banner2 .container {
+  background-image: url("/img/trafalgar-illustration sec02 1.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  flex-direction: row-reverse;
+}
+#banner2 .content-left {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 80px;
+}
+#banner2 .content {
+  width: 36%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#banner2 .content h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56px;
+  margin: 45px 0px;
+}
+#banner2 .content p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7d7987;
+}
+#banner2 h1 {
+  position: relative;
+}
+#banner2 h1:after {
+  content: "";
+  background-color: black;
+  width: 56px;
+  height: 2px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+/* banner3  */
+#banner3 {
+  height: 719px;
+  padding-top: 84px;
+  margin-bottom: 190px;
+}
+#banner3 .container {
+  background-image: url("/img/trafalgar-illustration sec03 1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#banner2 .content-left {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 80px;
+}
+#banner3 .content {
+  width: 36%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#banner3 .content h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  margin: 45px 0px;
+}
+#banner3 .content p {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  color: #7d7987;
+}
+#banner3 h1 {
+  position: relative;
+}
+#banner3 h1:after {
+  content: "";
+  background-color: black;
+  width: 56px;
+  height: 2px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+/* test */
+#test {
+  height: 425px;
+}
+#test .container {
+  background: url("/img/element.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+#test .content {
+  height: 425px;
+  width: 100%;
+  background-image: url("/img/element-br.png"),
+    linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-radius: 24px;
+  padding: 75px 115px 0px 115px;
+  color: white;
+}
+#test .header h2 {
+  color: white;
+}
+#test .header h2 {
+  position: relative;
+}
+#test .header h2:after {
+  content: "";
+  background-color: white;
+  width: 56px;
+  height: 2px;
+  position: absolute;
+  bottom: -20px;
+  left: 44%;
+}
+#test .content .left {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+#test .content .left div {
+  margin-left: 30px;
+}
+#test .content .right {
+  width: 50%;
+  font-size: 19px;
+  line-height: 30px;
+}
+#test .content .left h4 {
+  font-size: 22px;
+  line-height: 48px;
+}
+#test .content .left p {
+  font-size: 18px;
+  line-height: 48px;
+}
+/* updates */
+#updates {
+  height: 1184px;
+  padding-top: 165px;
+  position: relative;
+  background: url(/img/bg-services.png), url(/img/element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center right, right bottom;
+}
+#updates .container {
+  background: url(/img/element.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  flex-direction: column;
+  align-items: center;
+}
+/* 
+  #updates:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+  height: 100%;
+    z-index: -1;
+    transform: rotate(30deg);
+    opacity: .6;
+  } */
+#updates .header {
+  width: 100%;
+}
+#updates .header h2:after {
+  left: 47%;
+}
+#updates .articles {
+  flex-wrap: wrap;
+}
+#updates .articles img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+#updates .articles div {
+  width: 350px;
+  height: 512px;
+  margin: 17px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  background-color: white;
+}
+#updates .articles h3 {
+  font-size: 21px;
+  line-height: 32px;
+  margin: 32px;
+}
+#updates .articles p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+#updates .articles button {
+  color: #4089ed;
+  border: none;
+  background-color: white;
+  height: 28px;
+  width: 266px;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: left;
+  margin: 10px 32px;
+  cursor: pointer;
+}
+#updates .articles button:hover {
+  margin: 10px 64px;
+}
+#updates i {
+  margin-left: 10px;
+}
+#footer {
+  height: 432px;
+  background: url(/img/element.png),
+    linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding-top: 118px;
+}
+#footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+}
+#footer div div:first-child {
+  width: 375px;
+  display: block;
+}
+#footer .container div {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+}
+#footer ul {
+  list-style: none;
+}
+#footer h2,
+#footer img {
+  margin-bottom: 36px;
+}
+#footer ul li {
+  margin-bottom: 25px;
+}
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+#footer a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
