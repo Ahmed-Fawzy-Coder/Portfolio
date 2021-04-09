@@ -1,0 +1,4 @@
+@function pTr($pixels){
+
+    @return  #{$pixels/16}rem;
+}
