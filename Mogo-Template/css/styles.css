@@ -1,22 +1,31 @@
-#ourwork .workGrid .item .overlay::before, #team .aboutSlider .aboutSlider__card .innerCard .movingInnerCard .innerCardOverlay::before, #about .aboutSlider .aboutSlider__card .innerCard .movingInnerCard .innerCardOverlay::before, #banner::before {
-  background: linear-gradient(#E88182, #F0DA8A);
+#ourwork .workGrid .item .overlay::before,
+#team
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard
+  .innerCardOverlay::before,
+#about
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard
+  .innerCardOverlay::before,
+#banner::before {
+  background: linear-gradient(#e88182, #f0da8a);
 }
-
 body {
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.40625rem;
 }
-
 .navbar-background {
-  background: #DC8282;
+  background: #dc8282;
 }
-
 ul {
   list-style: none;
   padding: 0;
 }
-
 nav .navbar-collapse {
   top: 0px;
 }
@@ -31,13 +40,12 @@ nav .nav-item a {
   font-weight: 500;
 }
 nav .nav-item a:hover {
-  border-bottom: 2px solid #FCE38A;
+  border-bottom: 2px solid #fce38a;
 }
 nav .active {
-  color: #FCE38A !important;
-  border-bottom: 2px solid #FCE38A;
+  color: #fce38a !important;
+  border-bottom: 2px solid #fce38a;
 }
-
 #banner {
   height: 700px;
   background: url(../img/header.png) no-repeat;
@@ -109,7 +117,7 @@ nav .active {
   margin-top: 3.125rem;
 }
 #banner .banner-btn:hover {
-  background-color: #E88282;
+  background-color: #e88282;
   transition: all 0.3 ease-in-out;
 }
 #banner .custom-indicator {
@@ -187,7 +195,6 @@ nav .active {
   height: 2px;
   background: #f38181;
 }
-
 .header {
   color: #333;
   text-align: center;
@@ -220,7 +227,6 @@ nav .active {
   margin: 0 auto;
   text-align: center;
 }
-
 #about {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -248,14 +254,29 @@ nav .active {
   transform: translate(-10px, -10px);
   transition: all 0.3s ease-in-out;
 }
-#about .aboutSlider .aboutSlider__card .innerCard .movingInnerCard:hover .innerCardOverlay {
+#about
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard:hover
+  .innerCardOverlay {
   display: flex;
 }
-#about .aboutSlider .aboutSlider__card .innerCard .movingInnerCard:hover .innerCardOverlay::before {
+#about
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard:hover
+  .innerCardOverlay::before {
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
 }
-#about .aboutSlider .aboutSlider__card .innerCard .movingInnerCard .innerCardOverlay {
+#about
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard
+  .innerCardOverlay {
   display: none;
   position: absolute;
   height: 100%;
@@ -263,7 +284,13 @@ nav .active {
   align-items: center;
   justify-content: center;
 }
-#about .aboutSlider .aboutSlider__card .innerCard .movingInnerCard .innerCardOverlay p {
+#about
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard
+  .innerCardOverlay
+  p {
   position: relative;
   z-index: 3;
   color: white;
@@ -271,16 +298,20 @@ nav .active {
   font-weight: bold;
   font-size: 1.25rem;
 }
-#about .aboutSlider .aboutSlider__card .innerCard .movingInnerCard .innerCardOverlay::before {
+#about
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard
+  .innerCardOverlay::before {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
   opacity: 0;
 }
-
 #counters {
-  background: #95E1D3;
+  background: #95e1d3;
   height: auto;
 }
 #counters .counter {
@@ -298,12 +329,11 @@ nav .active {
 #counters .counter:first-child {
   border-left: 1px solid rgba(255, 255, 255, 0.35);
 }
-
 #services {
   padding: 80px 0;
 }
 #services .fas {
-  color: #95E1D3;
+  color: #95e1d3;
 }
 #services .serviceTitle {
   font-weight: 500;
@@ -315,7 +345,6 @@ nav .active {
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
-
 #screenshot {
   padding-top: 80px;
   background: url(../img/bg-unique-design.jpg) no-repeat center center/cover;
@@ -334,12 +363,11 @@ nav .active {
   right: 14%;
   bottom: -80px;
 }
-
 #service {
   padding: 80px 0;
 }
 #service i {
-  color: #95E1D3;
+  color: #95e1d3;
   margin-right: 0.625rem;
 }
 #service .accordion-button:not(.collapsed) {
@@ -354,35 +382,44 @@ nav .active {
   overflow: scroll;
   overflow-x: hidden;
 }
-
-#testimonials, #testimonials2 {
+#testimonials,
+#testimonials2 {
   padding: 3.75rem 0;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
-#testimonials .row .prev-arrow, #testimonials .row .next-arrow, #testimonials2 .row .prev-arrow, #testimonials2 .row .next-arrow {
+#testimonials .row .prev-arrow,
+#testimonials .row .next-arrow,
+#testimonials2 .row .prev-arrow,
+#testimonials2 .row .next-arrow {
   border: none;
   background: none;
   font-size: 2rem;
   color: grey;
 }
-#testimonials .col-md-2 i, #testimonials .col-12 i, #testimonials2 .col-md-2 i, #testimonials2 .col-12 i {
-  color: #95E1D3;
+#testimonials .col-md-2 i,
+#testimonials .col-12 i,
+#testimonials2 .col-md-2 i,
+#testimonials2 .col-12 i {
+  color: #95e1d3;
   padding: 10px;
-  border: 2px solid #95E1D3;
+  border: 2px solid #95e1d3;
 }
-#testimonials .quote, #testimonials2 .quote {
+#testimonials .quote,
+#testimonials2 .quote {
   font-size: 18px;
   font-weight: 300;
   font-style: italic;
   margin-bottom: 10px;
 }
-#testimonials .name, #testimonials2 .name {
+#testimonials .name,
+#testimonials2 .name {
   font-family: "Kaushan Script", cursive;
   font-size: 18px;
   position: relative;
   padding-left: 50px;
 }
-#testimonials .name:after, #testimonials2 .name:after {
+#testimonials .name:after,
+#testimonials2 .name:after {
   content: "";
   position: absolute;
   left: 0;
@@ -392,7 +429,6 @@ nav .active {
   background: #f38181;
   transform: translateY(-50%);
 }
-
 #team {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -429,14 +465,29 @@ nav .active {
   transform: translate(-10px, -10px);
   transition: all 0.3s ease-in-out;
 }
-#team .aboutSlider .aboutSlider__card .innerCard .movingInnerCard:hover .innerCardOverlay {
+#team
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard:hover
+  .innerCardOverlay {
   display: flex;
 }
-#team .aboutSlider .aboutSlider__card .innerCard .movingInnerCard:hover .innerCardOverlay::before {
+#team
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard:hover
+  .innerCardOverlay::before {
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
 }
-#team .aboutSlider .aboutSlider__card .innerCard .movingInnerCard .innerCardOverlay {
+#team
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard
+  .innerCardOverlay {
   display: none;
   position: absolute;
   height: 100%;
@@ -444,16 +495,29 @@ nav .active {
   align-items: center;
   justify-content: center;
 }
-#team .aboutSlider .aboutSlider__card .innerCard .movingInnerCard .innerCardOverlay .socialCards {
+#team
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard
+  .innerCardOverlay
+  .socialCards {
   position: relative;
   z-index: 3;
   color: white;
   display: flex;
 }
-#team .aboutSlider .aboutSlider__card .innerCard .movingInnerCard .innerCardOverlay .socialCards div {
+#team
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard
+  .innerCardOverlay
+  .socialCards
+  div {
   height: 35px;
   width: 35px;
-  background-color: #FCE38A;
+  background-color: #fce38a;
   margin: 0 1px;
   color: #f38181;
   display: flex;
@@ -461,20 +525,31 @@ nav .active {
   align-items: center;
   font-size: 1.125rem;
 }
-#team .aboutSlider .aboutSlider__card .innerCard .movingInnerCard .innerCardOverlay .socialCards div:hover {
+#team
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard
+  .innerCardOverlay
+  .socialCards
+  div:hover {
   color: white;
   background-color: #f38181;
 }
-#team .aboutSlider .aboutSlider__card .innerCard .movingInnerCard .innerCardOverlay::before {
+#team
+  .aboutSlider
+  .aboutSlider__card
+  .innerCard
+  .movingInnerCard
+  .innerCardOverlay::before {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
   opacity: 0;
 }
-
 #partners {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   height: 200px;
   padding: 2rem 0;
 }
@@ -485,7 +560,6 @@ nav .active {
 #partners .slick-slide:hover {
   transform: scale(1.1);
 }
-
 #ourwork {
   padding-top: 5rem;
 }
@@ -538,7 +612,6 @@ nav .active {
 #ourwork .workGrid div:nth-child(3) {
   grid-row: span 2;
 }
-
 #testimonials2 .avatar {
   width: 126px;
 }
@@ -553,7 +626,6 @@ nav .active {
   border: 1px solid #ddd;
   transition: all 0.2s ease-in-out;
 }
-
 #clients {
   background: url(/img/bg-unique-design.jpg);
   padding: 5rem 0;
@@ -590,7 +662,6 @@ nav .active {
   height: 2px;
   background: #f38181;
 }
-
 #stories {
   padding: 5rem 0;
 }
@@ -641,10 +712,10 @@ nav .active {
   display: flex;
   margin-top: 10px;
 }
-#stories .post .postMeta ul li, #stories .post .postMeta ul li i {
+#stories .post .postMeta ul li,
+#stories .post .postMeta ul li i {
   margin-right: 10px;
 }
-
 #map {
   padding: 50px 0 60px 0;
   background: url(/img/bg-map.jpg);
@@ -668,11 +739,10 @@ nav .active {
   left: 50%;
   transform: translateX(-50%);
 }
-
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 footer .followers {
   font-weight: 500;
@@ -751,7 +821,6 @@ footer .gallery img {
   width: 82px;
   width: 70px;
 }
-
 #toTop {
   width: 50px;
   height: 50px;
@@ -768,13 +837,11 @@ footer .gallery img {
   line-height: 48px;
   color: white;
 }
-
 .showToTop {
   display: block !important;
 }
-
 @media (min-width: 768px) {
-  #services .service:nth-child(-n+3) {
+  #services .service:nth-child(-n + 3) {
     border-bottom: 1px solid #e5e5e5;
   }
 }
@@ -782,11 +849,9 @@ footer .gallery img {
   .navbar-nav {
     background-color: #39322c;
   }
-
   .navbar-collapse {
     top: 50px !important;
   }
-
   .gallery img {
     width: 70px;
   }
@@ -801,27 +866,22 @@ footer .gallery img {
   #banner .carousel-inner .carousel-item .title {
     font-size: 4.75rem;
   }
-
-  #services .service:nth-child(-n+4) {
+  #services .service:nth-child(-n + 4) {
     border-bottom: 1px solid #e5e5e5;
   }
-
   #screenshot .content .tablet {
     width: 380px;
   }
   #screenshot .content .mobile {
     right: -1%;
   }
-
   #ourwork .workGrid {
     grid-auto-rows: 200px;
     grid-template-columns: auto auto auto;
   }
-
   .workGrid .item:nth-last-child(1) {
     grid-column: span 2;
   }
-
   .toDisappear {
     display: none;
   }
@@ -833,7 +893,6 @@ footer .gallery img {
   .carousel-indicators li .inner:hover:after {
     width: 30px !important;
   }
-
   #banner .carousel-inner {
     padding-top: 13.25rem;
   }
@@ -843,22 +902,18 @@ footer .gallery img {
   #banner .carousel-inner .carousel-item .title {
     font-size: 3.5rem;
   }
-
   #services .service {
     border-bottom: 1px solid #e5e5e5;
   }
-
   #screenshot .content .tablet {
     width: 100%;
   }
   #screenshot .content .mobile {
     right: -2%;
   }
-
   #ourwork .workGrid {
     grid-template-columns: auto auto;
   }
-
   .workGrid .item:nth-last-child(1) {
     grid-column: span 1;
   }
@@ -873,10 +928,8 @@ footer .gallery img {
     margin: 0 auto;
     right: unset;
   }
-
   #ourwork .workGrid {
     grid-template-columns: auto;
   }
 }
-
 /*# sourceMappingURL=styles.css.map */
