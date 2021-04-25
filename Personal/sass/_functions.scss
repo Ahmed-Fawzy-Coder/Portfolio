@@ -1,4 +1,4 @@
-@function pixelsToRem($pixels){
+@function pixelsToRem($pixels) {
 
-    @return  #{$pixels/16}rem;
+  @return #{$pixels/16}rem;
 }

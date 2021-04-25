@@ -1,16 +1,16 @@
 %main-gradient {
-    background :linear-gradient(to right, #8490FF, #63BCFC);
+  background: linear-gradient(to right, #8490FF, #63BCFC);
 }
 
 %btn {
-    font-size: pixelsToRem(16);
-    height: 42px;
-    border: none;
-    margin: 20px 0;
-    cursor: pointer;
-    outline: none;
-    line-height: 42px;
-    padding-left: 30px;
-    padding-right: 30px;
-    display: inline-block;
+  font-size: pixelsToRem(16);
+  height: 42px;
+  border: none;
+  margin: 20px 0;
+  cursor: pointer;
+  outline: none;
+  line-height: 42px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-block;
 }

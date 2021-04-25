@@ -1,24 +1,28 @@
 
 .cards .card i {
-    font-size: 35px;
+  font-size: 35px;
 }
+
 .cards {
-    padding: 50px 0px;
-    h2{
-        margin: 20px auto;
-        font-weight: 500;
-        font-size: pixelsToRem(18)
+  padding: 50px 0px;
+
+  h2 {
+    margin: 20px auto;
+    font-weight: 500;
+    font-size: pixelsToRem(18)
+  }
+
+  .card {
+    padding: 20px;
+    text-align: center;
+
+    & > div {
+      &:hover {
+        background: linear-gradient(to right, $gradientColor1, $gradientColor2);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
     }
-    .card {
-        padding: 20px;
-        text-align: center;
-        &>div {
-            &:hover{
-                background: linear-gradient(to right, $gradientColor1, $gradientColor2);
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-            }
-        }
-    }
+  }
 }

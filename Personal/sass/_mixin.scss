@@ -1,9 +1,9 @@
-@mixin weightNcolor($weight:200,$color:#222222){
-    font-weight: $weight;
-    color: $color;
-   
+@mixin weightNcolor($weight:200,$color:#222222) {
+  font-weight: $weight;
+  color: $color;
+
 }
 
 @mixin transition($time: .3) {
-    transition: all #{$time}s ease-in-out;
+  transition: all #{$time}s ease-in-out;
 }

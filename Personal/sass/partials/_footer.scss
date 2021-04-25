@@ -1,50 +1,59 @@
 
 #footer {
-    background-color: #04091E;
-    height: 500px;
-    padding-top: 110px;
-    h2 {
-        color: #fff;
-        margin: 40px 0px;
-        font-size: 18px
-    }
-    p {
-        font-size: 14px;
-    }
-    ul {
-        display: flex;
-        list-style: none;
-        justify-content: space-between;
-        margin-top: 25px;
-        color: white
-    }
-}
-.footer-container {
+  background-color: #04091E;
+  height: 500px;
+  padding-top: 110px;
+
+  h2 {
+    color: #fff;
+    margin: 40px 0px;
+    font-size: 18px
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  ul {
     display: flex;
-    div{
-        padding-right: 44px
-    }
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 25px;
+    color: white
+  }
 }
+
+.footer-container {
+  display: flex;
+
+  div {
+    padding-right: 44px
+  }
+}
+
 .newsletter {
-    .row{
-        margin-top: 20px
+  .row {
+    margin-top: 20px
+  }
+
+  input {
+    width: 87%;
+    height: 50px;
+    background-color: #F9F9FF;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+
+    &:focus {
+      outline: 5px;
+      outline-color: $main-color
     }
-    input {
-        width: 87%;
-        height: 50px;
-        background-color: #F9F9FF;
-        border: none;
-        padding: 5px 10px;
-        font-size: 20px;
-        &:focus{
-            outline: 5px;
-            outline-color: $main-color
-        }
-    }
-    button {
-        width: 13%;
-        background-color: $main-color;
-        border: none;
-        color: white;
-    }
+  }
+
+  button {
+    width: 13%;
+    background-color: $main-color;
+    border: none;
+    color: white;
+  }
 }
